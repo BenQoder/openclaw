@@ -1,0 +1,26 @@
+manifestVersion: 1
+id: openclaw-app
+name: OpenClaw
+tagline: Open-source claw machine game
+icon: https://svgur.com/i/mvA.svg
+category: Games
+version: "1.0.0"
+port: 4000
+description: >-
+  OpenClaw is an open-source implementation of the classic claw machine game.
+developer: 1panel
+website: https://hub.docker.com/r/1panel/openclaw
+submitter: OpenClaw
+submission: https://github.com/BenQoder/openclaw
+repo: https://github.com/BenQoder/openclaw
+support: https://github.com/BenQoder/openclaw/issues
+gallery:
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+releaseNotes: >-
+  Initial release of OpenClaw for Umbrel.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
