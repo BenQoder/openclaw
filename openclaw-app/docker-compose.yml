@@ -1,0 +1,25 @@
+version: "3.7"
+
+services:
+
+  app_proxy:
+    environment:
+      # The format here is: <app-id>_<docker-service-name>_1
+      APP_HOST: openclaw-app_server_1
+      APP_PORT: 18789
+
+  server:
+    image: 1panel/openclaw:latest
+    user: "1000:1000"
+    init: true
+    restart: unless-stopped
+    ports:
+      - "18789:18789"
+      - "18790:18790"
+    volumes:
+      - ${APP_DATA_DIR}/config:/home/node/.openclaw
+      - ${APP_DATA_DIR}/workspace:/home/node/workspace
+    environment:
+      - NODE_ENV=production
+      - OPENCLAW_STATE_DIR=/home/node/.openclaw
+      - OPENCLAW_WORKSPACE_DIR=/home/node/workspace
