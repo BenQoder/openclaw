@@ -13,9 +13,7 @@ services:
     user: "1000:1000"
     init: true
     restart: unless-stopped
-    ports:
-      - "18789:18789"
-      - "18790:18790"
+    command: openclaw gateway --port 18789
     volumes:
       - ${APP_DATA_DIR}/config:/home/node/.openclaw
       - ${APP_DATA_DIR}/workspace:/home/node/workspace
