@@ -12,7 +12,8 @@ services:
     image: 1panel/openclaw:latest
     init: true
     restart: unless-stopped
-    command: ["openclaw", "gateway", "--port", "18789"]
+    entrypoint: ["/bin/sh", "-c"]
+    command: ["openclaw gateway --port 18789"]
     volumes:
       - ${APP_DATA_DIR}/data:/data
     environment:
