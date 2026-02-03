@@ -4,7 +4,7 @@ name: OpenClaw
 tagline: Autonomous AI coding agent
 icon: https://raw.githubusercontent.com/openclaw/openclaw/main/docs/assets/pixel-lobster.svg
 category: Development
-version: "1.0.0"
+version: "1.0.1"
 port: 8080
 description: >-
   OpenClaw (formerly Moltbot/Clawdbot) is an autonomous AI coding agent that can help with software development tasks.
